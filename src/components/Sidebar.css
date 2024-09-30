@@ -1,0 +1,72 @@
+/* Sidebar, inicialmente estreito */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 60px; /* Largura inicial pequena */
+  background-color: #0b3805;
+  overflow: hidden; /* Esconde o conteúdo até o hover */
+  transition: width 0.4s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+/* Quando o cursor passa, expande o Sidebar */
+.sidebar:hover {
+  width: 250px; /* Largura ao passar o mouse */
+}
+
+/* Estilos para a lista */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.sidebar ul li {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  padding-left: 10px;
+}
+
+/* Ícones sempre visíveis */
+.sidebar .icon {
+  color: white;
+  font-size: 24px;
+  min-width: 60px; /* Mantém o ícone alinhado à esquerda quando expandido */
+  text-align: center;
+}
+
+/* Texto escondido quando o Sidebar está fechado */
+.sidebar .text {
+  color: white;
+  font-size: 16px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  white-space: nowrap;
+}
+
+/* Mostrar texto quando o Sidebar é expandido */
+.sidebar:hover .text {
+  opacity: 1;
+}
+
+/* Links no Sidebar */
+.sidebar ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+}
+
+/* Hover effect no texto */
+.sidebar ul li a:hover .text {
+  text-decoration: underline;
+}

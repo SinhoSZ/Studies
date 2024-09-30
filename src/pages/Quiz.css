@@ -1,0 +1,56 @@
+/* Define o container da página de Quiz com padding e centraliza o conteúdo */
+.quiz-container {
+    padding: 20px; /* Adiciona 20px de espaçamento interno ao redor do container */
+    text-align: center; /* Centraliza o conteúdo da página */
+}
+
+/* Define o layout dos cards de quiz, usando flexbox para alinhá-los */
+.quiz-cards {
+    display: flex; /* Utiliza o layout flexbox para organizar os elementos horizontalmente */
+    justify-content: space-around; /* Distribui os cards de maneira uniforme com espaço entre eles */
+    flex-wrap: wrap; /* Permite que os cards quebrem de linha quando o espaço disponível acabar */
+    gap: 20px; /* Adiciona um espaçamento de 20px entre cada card */
+}
+
+/* Estiliza cada card individualmente */
+.quiz-card {
+    background-color: #1e2d22; /* Define a cor de fundo do card como verde escuro */
+    border-radius: 10px; /* Arredonda os cantos dos cards em 10px */
+    padding: 20px; /* Adiciona 20px de espaçamento interno ao redor do card */
+    width: 300px; /* Define uma largura fixa de 300px para cada card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra sutil ao redor dos cards */
+    transition: transform 0.3s ease; /* Define uma transição suave para a transformação do card no hover */
+}
+
+/* Estiliza o título (h2) dentro dos cards */
+.quiz-card h2 {
+    font-size: 1.5rem; /* Define o tamanho da fonte do título como 1.5 rem */
+    color: #08a535; /* Define a cor do título como verde claro */
+}
+
+/* Estiliza o parágrafo (p) dentro dos cards */
+.quiz-card p {
+    color: white; /* Define a cor do texto como branco */
+    margin-bottom: 15px; /* Adiciona um espaçamento inferior de 15px no parágrafo */
+}
+
+/* Adiciona um efeito ao passar o mouse sobre o card */
+.quiz-card:hover {
+    transform: translateY(-5px); /* Move o card 5px para cima ao passar o cursor sobre ele */
+}
+
+/* Estiliza o botão "Começar Prova" dentro dos cards */
+.start-quiz-button {
+    background-color: #08a535; /* Define a cor de fundo do botão como verde claro */
+    color: white; /* Define a cor do texto do botão como branco */
+    padding: 10px 20px; /* Adiciona 10px de espaçamento vertical e 20px de espaçamento horizontal ao botão */
+    border: none; /* Remove qualquer borda do botão */
+    border-radius: 5px; /* Arredonda os cantos do botão em 5px */
+    cursor: pointer; /* Muda o cursor para indicar que o botão é clicável */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave na mudança de cor de fundo */
+}
+
+/* Muda a cor de fundo do botão ao passar o cursor sobre ele */
+.start-quiz-button:hover {
+    background-color: #02450d; /* Muda a cor de fundo para verde mais escuro ao passar o cursor */
+}

@@ -1,0 +1,21 @@
+.header {
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(90deg, #0b3805, #000000); /* Degradê do verde para o preto */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+}

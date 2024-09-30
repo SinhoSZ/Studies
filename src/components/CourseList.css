@@ -1,0 +1,58 @@
+.course-list {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os cursos quebrem de linha quando não couberem */
+    justify-content: space-between; /* Distribui o espaço uniformemente */
+    gap: 20px; /* Espaçamento entre os cursos */
+    margin-left: 50px;
+  }
+  
+  .course {
+    background-color: #f4f4f4;
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    width: calc(33.33% - 20px); /* Define o tamanho de cada curso */
+    box-sizing: border-box; /* Garante que padding e border não ultrapassem o tamanho */
+    cursor: pointer;
+    border: 2px solid #ccc; /* Adiciona uma borda */
+    transition: box-shadow 0.3s ease; /* Transição suave para o efeito hover */
+  }
+  
+  .course h2 {
+    margin: 0;
+    color: #333;
+  }
+  
+  .course p {
+    margin: 10px 0;
+    color: #666;
+  }
+  
+  .lessons {
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top: 10px;  /* Espaçamento entre a lista de aulas e o título */
+  }
+  
+  .lessons li {
+    margin: 5px 0;
+    color: #007bff;
+    list-style-type: disc;  /* Estilo dos marcadores */
+  }
+  
+  .course:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(10, 241, 2, 0.2); /* Efeito de sombra ao passar o cursor */
+  }
+  
+  /* Responsividade para telas menores */
+@media (max-width: 1024px) {
+    .course {
+      width: calc(50% - 20px); /* Dois cursos por linha em telas médias */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .course {
+      width: 100%; /* Um curso por linha em telas pequenas */
+    }
+  }

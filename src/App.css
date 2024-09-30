@@ -36,3 +36,27 @@
     transform: rotate(360deg);
   }
 }
+
+.App {
+  display: flex;
+}
+
+.content {
+  margin-top: 60px; /* Altura do Header */
+  margin-left: 250; /* Largura da Sidebar */
+  padding: 20px;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center;     /* Centraliza verticalmente */
+  font-family: Arial, sans-serif; /* Apenas para melhorar a tipografia */
+}
+
+.container {
+  text-align: center; /* Centraliza o texto dentro do container */
+}
+
