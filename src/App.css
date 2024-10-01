@@ -48,6 +48,7 @@
 }
 
 body, html {
+  background-color: #c5e6cc;
   height: 100%;
   margin: 0;
   display: flex;

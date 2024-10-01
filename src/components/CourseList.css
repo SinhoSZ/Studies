@@ -7,7 +7,7 @@
   }
   
   .course {
-    background-color: #f4f4f4;
+    background-color: #1e2d22;
     padding: 20px; /* Espaçamento interno */
     border-radius: 8px; /* Bordas arredondadas */
     width: calc(33.33% - 20px); /* Define o tamanho de cada curso */
@@ -19,12 +19,12 @@
   
   .course h2 {
     margin: 0;
-    color: #333;
+    color: #08a535;
   }
   
   .course p {
     margin: 10px 0;
-    color: #666;
+    color: white;
   }
   
   .lessons {
