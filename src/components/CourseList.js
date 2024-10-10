@@ -9,6 +9,8 @@ const coursesData = [
       { id: 1, title: 'Substantivos e Artigos' },
       { id: 2, title: 'Verbos e Advérbios' },
       { id: 3, title: 'Pronomes e Preposições' },
+      { id: 4, title: 'Adjetivos e Conjunções' },
+      { id: 5, title: 'Interjeições e Numerais' },
     ],
   },
   {
@@ -29,6 +31,8 @@ const coursesData = [
       { id: 1, title: 'Princípios Constitucionais' },
       { id: 2, title: 'Direitos e Garantias Fundamentais' },
       { id: 3, title: 'Organização dos Poderes' },
+      { id: 4, title: 'Nacionalidade'},
+      { id: 5, title: 'Partido Políticos'}
     ],
   },
   {
@@ -59,6 +63,13 @@ const coursesData = [
       { id: 1, title: 'Lei de Drogas' },
       { id: 2, title: 'Lei de Execuções Penais' },
       { id: 3, title: 'Lei Maria da Penha' },
+      { id: 4, title: 'Lei de Abuso de Autoridade'},
+      { id: 5, title: 'E.C.A' },
+      { id: 6, title: 'Tortura'},
+      { id: 7, title: 'Crime Hediondos'},
+      { id: 8, title: 'Crimes de Preconceito de Raça ou Cor'},
+      { id: 9, title: 'Organização Criminosa'},
+      { id: 10, title: 'Crimes Ambientais'}
     ],
   },
 ];
