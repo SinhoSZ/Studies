@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const coursesData = [
   {
@@ -92,7 +93,11 @@ const CourseList = () => {
           {selectedCourse === course.id && (
             <ul className="lessons">
               {course.lessons.map((lesson) => (
-                <li key={lesson.id}>{lesson.title}</li>
+                <li key={lesson.id}>
+                  <Link to={`/course/${course.id}/lesson/${lesson.id}`}>
+                    {lesson.title}
+                  </Link>
+                </li>
               ))}
             </ul>
           )}
