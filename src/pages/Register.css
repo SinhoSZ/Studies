@@ -1,0 +1,79 @@
+/* Estilo para o contêiner principal */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: linear-gradient(90deg, #0b3805, #000000); /* Degradê do verde para o preto Fundo claro */
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para o formulário */
+.register-form {
+    background-color: #ffffff; /* Fundo branco */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Título */
+.register-form h1 {
+    margin-bottom: 20px;
+    color: #333; /* Cor do título */
+}
+
+/* Inputs */
+.register-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Mensagens de erro */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin: -10px 0 10px;
+    text-align: left;
+}
+
+/* Botão */
+.register-form button {
+    background-color: #512da8;
+    color: #ffffff; /* Texto branco */
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+.register-form button:hover {
+    background-color: #35177d;
+}
+
+/* Mensagem de sucesso */
+.success-message {
+    color: #08a535;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .register-form {
+        padding: 20px;
+    }
+
+    .register-form h1 {
+        font-size: 1.5rem;
+    }
+}
